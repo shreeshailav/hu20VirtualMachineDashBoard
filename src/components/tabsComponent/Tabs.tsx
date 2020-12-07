@@ -133,7 +133,7 @@ const Tabs: React.FC<Props> = ({
         ) {
           setErrorMessage(extCapacityWarning);
           setOpenErrorModal(true);
-        } else if(rootStorage && extStorage){
+        } else if(rootStorage || extStorage){
           let newConfigVirtualMachineDetails = virtualMachineDetails;
           newConfigVirtualMachineDetails = {
             ...virtualMachineDetails,

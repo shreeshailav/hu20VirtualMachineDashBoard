@@ -1,4 +1,7 @@
-import {StorageCapacityOption,SecurityPolicy} from './../store/virtualMachin/types'
+import {
+  StorageCapacityOption,
+  SecurityPolicy,
+} from "./../store/virtualMachin/types";
 export const tabData = [
   { key: 1, value: "1. Choose Image" },
   { key: 2, value: "2. Choose Instance Type" },
@@ -6,13 +9,15 @@ export const tabData = [
   { key: 4, value: "4. Configure Security" },
   { key: 4, value: "5. Review and Launch" },
 ];
-export const windowsSelectionError = 'Windows is only available in us-east-1 & us-east-2. If you proceed you may lose data'
-export const extCapacityWarning = 'For magnetic disk - minimum capacity 40 GB, maximum capacity 2 TB'
-export const ssdCapacityWarning = 'For SSD - minimum 20 GB, maximum 512 GB'
-export const ploicyWarning = 'Please Select Security Policy'
-export const selectCPUMemory = 'Please Select CPU and Memory'
+export const windowsSelectionError =
+  "Windows is only available in us-east-1 & us-east-2. If you proceed you may lose data";
+export const extCapacityWarning =
+  "For magnetic disk - minimum capacity 40 GB, maximum capacity 2 TB";
+export const ssdCapacityWarning = "For SSD - minimum 20 GB, maximum 512 GB";
+export const ploicyWarning = "Please Select Security Policy";
+export const selectCPUMemory = "Please Select CPU and Memory";
 
-export const warning = 'Warning'
+export const warning = "Warning";
 export const virtualMachineDetails = {
   totalPrice: 0,
   vitualMachines: {
@@ -45,8 +50,8 @@ export const virtualMachineDetails = {
     value: "Security SG1",
   },
   storageCapacity: {
-    bandwidth: 22,
-    bandwidthPrice: 222,
+    bandwidth: 512,
+    bandwidthPrice: 5,
     storageCapacityId: "str123",
     storageCapacityOption: [
       {
@@ -66,8 +71,8 @@ export const virtualMachineDetails = {
 };
 
 export const storageCapacity = {
-  bandwidth: 22,
-  bandwidthPrice: 222,
+  bandwidth: 512,
+  bandwidthPrice: 5,
   storageCapacityId: "str123",
   storageCapacityOption: [
     {
@@ -115,7 +120,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm102",
@@ -128,7 +133,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm103",
@@ -141,7 +146,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm104",
@@ -151,9 +156,7 @@ export const initialStateConstant = {
         "Microsoft Windows Server 2019 Base comes with 5 years of support.",
       regionId: "rg1",
       basicPrice: 338.77,
-      hostType: [
-        { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      hostType: [{ hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 }],
     },
     {
       vmImageId: "vm101",
@@ -165,7 +168,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm102",
@@ -178,7 +181,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm103",
@@ -191,7 +194,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm104",
@@ -201,9 +204,7 @@ export const initialStateConstant = {
         "Microsoft Windows Server 2019 Base comes with 5 years of support.",
       regionId: "rg2",
       basicPrice: 338.77,
-      hostType: [
-        { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      hostType: [{ hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 }],
     },
     {
       vmImageId: "vm101",
@@ -215,7 +216,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm102",
@@ -228,7 +229,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm103",
@@ -241,7 +242,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm101",
@@ -253,7 +254,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm102",
@@ -266,7 +267,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
     {
       vmImageId: "vm103",
@@ -279,7 +280,7 @@ export const initialStateConstant = {
       hostType: [
         { hostId: "host1", hostName: "32 Bit", priceOnHostType: 10 },
         { hostId: "host2", hostName: "64 Bit", priceOnHostType: 50 },
-      ]
+      ],
     },
   ],
   hostType: [
@@ -380,10 +381,10 @@ export const initialStateConstant = {
         backupRequired: false,
         remark: "remark",
         price: 0,
-      }
+      },
     ],
-    bandwidth: 22,
-    bandwidthPrice: 222,
+    bandwidth: 512,
+    bandwidthPrice: 5,
   },
   typeStorage: [
     { key: "typestr1", value: "SSD", typeStoragePrice: 20 },
@@ -426,7 +427,6 @@ export const initialStateConstant = {
   ],
 };
 
-
 export const extStorageCapacityOption: StorageCapacityOption = {
   storageCapacityOptionId: "strcpt2",
   storageType: "EXT",
@@ -444,8 +444,7 @@ export const extStorageCapacityOption: StorageCapacityOption = {
   price: 512,
 };
 
-
-export const securityPolicy:SecurityPolicy[] = [
+export const securityPolicy: SecurityPolicy[] = [
   {
     securityPolicyId: "sec1",
     securityPolicyName: "Security SG1",
@@ -479,4 +478,4 @@ export const securityPolicy:SecurityPolicy[] = [
     key: "sec3",
     value: "Security SG2",
   },
-]
+];

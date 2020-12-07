@@ -13,9 +13,10 @@ const CardCoponent = ({ virtualMachineDetails }: Props) => {
         instanceType,
         storageCapacity,
       } = virtualMachineDetails;
-      const extPrice = virtualMachineDetails.storageCapacity?.storageCapacityOption?.filter(
+      const extData = virtualMachineDetails.storageCapacity?.storageCapacityOption?.filter(
         (item) => item.storageType === "EXT"
-      )[0].price;
+      )[0];
+      const extPrice = extData ? extData.price : 0
       const total =
         (vitualMachines?.basicPrice ? vitualMachines?.basicPrice : 0) +
         (instanceType?.cpuPrice ? instanceType?.cpuPrice : 0) +
@@ -28,9 +29,10 @@ const CardCoponent = ({ virtualMachineDetails }: Props) => {
     return 0;
   };
   const totalPice = getTotalPrice();
-  const storageCapacityPrice = virtualMachineDetails.storageCapacity?.storageCapacityOption?.filter(
+  const storageCapacityData= virtualMachineDetails.storageCapacity?.storageCapacityOption?.filter(
     (item) => item.storageType === "EXT"
-  )[0].price
+  )[0]
+  const storageCapacityPrice = storageCapacityData && storageCapacityData.price 
   return (
     <div className="Card-style">
       <div className="cost-panel-title">
@@ -66,8 +68,8 @@ const CardCoponent = ({ virtualMachineDetails }: Props) => {
               <label>{`$${virtualMachineDetails.instanceType?.cpuPrice}`}</label>
             </div>
           )}
-        {storageCapacityPrice &&
-          storageCapacityPrice > 0 && (
+        {(storageCapacityPrice &&
+          storageCapacityPrice > 0) && (
             <div className="cost-panel-row">
               <label>{"EXT Storage"}</label>
               <label>{`$${
