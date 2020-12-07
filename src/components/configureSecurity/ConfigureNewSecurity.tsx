@@ -8,7 +8,7 @@ const securityType = [
   { key: "st2", value: "SSH" },
   { key: "st3", value: "SMTP" },
 ];
-import './ConfigureNewSecurity'
+import './ConfigureNewSecurity.css'
 type Props = {
   addNewPolicy: (newSecurityPolicy:SecurityPolicy)=>void
 };
