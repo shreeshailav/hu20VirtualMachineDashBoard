@@ -61,3 +61,22 @@
 .input-text-style input {
   margin-top: 0px;
 }
+.root-view {
+  font-size: 1em;
+  align-content: center;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+  color: black;
+  font-size: 14px;
+}
+.root-view ul {
+  display: flex;
+  flex-direction: column;
+}
+.root-view input {
+  margin-top: 1em;
+}
+.select-group {
+  margin-left: 0.4em;
+}

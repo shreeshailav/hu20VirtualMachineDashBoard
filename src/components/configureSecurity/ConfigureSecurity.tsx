@@ -86,7 +86,7 @@ const ConfigureSecurity: React.FC<Props> = ({
           </div>
         )}
       </React.Fragment>
-      <style jsx>{`
+      {/* <style jsx>{`
         .root-view {
           font-size: 1em;
           align-content: center;
@@ -106,7 +106,7 @@ const ConfigureSecurity: React.FC<Props> = ({
         .select-group {
           margin-left: 0.4em;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 };

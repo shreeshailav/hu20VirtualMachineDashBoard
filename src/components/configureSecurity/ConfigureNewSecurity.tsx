@@ -3,12 +3,12 @@ import { Select } from "./../select/select";
 import { primary, grey } from "./../../utils/colors";
 import CustomButton from "./../button/Button";
 import {SecurityPolicy} from './../../store/virtualMachin/types'
+import './ConfigureNewSecurity.css'
 const securityType = [
   { key: "st1", value: "HTTPS" },
   { key: "st2", value: "SSH" },
   { key: "st3", value: "SMTP" },
 ];
-import './ConfigureNewSecurity.css'
 type Props = {
   addNewPolicy: (newSecurityPolicy:SecurityPolicy)=>void
 };
