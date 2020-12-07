@@ -1,0 +1,230 @@
+:root {
+  --primary: #007eff;
+  --white: #ffffff;
+  --black: #000000;
+}
+.body-review-styles {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  text-align: left;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: flex-start;
+}
+.card-styles {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 1;
+  background-color: white;
+  flex-direction: row;
+  margin-left: 10px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 5px;
+  align-items: center;
+  margin-top: 1em;
+}
+.card-styles-storage {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 30%;
+  background-color: white;
+  flex-direction: row;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 5px;
+  align-items: center;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+.card-styles-instance {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  margin-left: 0.5em;
+  margin-bottom: 0;
+}
+.close-style {
+  flex: 0.05;
+  justify-content: center;
+  align-items: center;
+}
+.close-style img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.Img-content-host-type {
+  display: flex;
+  flex-direction: row;
+  flex: 0.1;
+  flex-wrap: wrap;
+}
+.instance-input {
+  width: 10em;
+  height: 2em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+.card-edit-button {
+  color: var(--primary);
+  margin: 0;
+  font-size: 16px;
+  text-align: right;
+}
+.review-buttons {
+  display: flext;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+.review-back-button {
+  width: 6em;
+  background-color: red;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  color: var(--white);
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}
+.review-proceed-button {
+  width: 6em;
+  background-color: black;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  color: var(--white);
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}
+.review-launch-button {
+  width: 6em;
+  background-color: green;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  color: var(--white);
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}
+.body-styles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.body-styles img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.card-review-styles {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 0.95;
+  background-color: white;
+  flex-direction: row;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 5px;
+  font-size: 1em;
+  align-content: flex-start;
+  text-align: flex-start;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+  margin-top: 2em;
+}
+.Img-content h2 {
+  font-size: 1em;
+  align-content: left;
+  text-align: left;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: flex-start;
+}
+.Img-content h3 {
+  font-size: 1em;
+  align-content: left;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  justify-content: flex-start;
+}
+.dropdown-space {
+  margin-right: 2em;
+}
+.close-style {
+  flex: 0.05;
+  justify-content: center;
+  align-items: center;
+}
+.add-button {
+  display: flex;
+  margin-top: 5em;
+  align-content: left;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+}
+.Img-content ul {
+  display: flex;
+  flex-direction: column;
+}
+.sub-content {
+  margin-top: 1em;
+}
+.button-review-check {
+  width: 18px;
+  height: 18px;
+  background: var(--primary);
+}
+.button-review-no-check {
+  width: 18px;
+  height: 18px;
+  background: var(--grey);
+}

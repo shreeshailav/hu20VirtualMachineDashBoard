@@ -1,0 +1,26 @@
+.Instance-main {
+  margin-left: 30px;
+}
+.instance-div {
+  /* background-color: orange; */
+  height: 100%;
+}
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5em;
+}
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+.root-view h2 {
+  font-size: 1em;
+  align-content: left;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+}
+.dropdown-space {
+  margin-right: 2em;
+}

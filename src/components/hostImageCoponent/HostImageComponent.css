@@ -1,0 +1,64 @@
+:root {
+  --primary: #007eff;
+  --white: #ffffff;
+}
+.Img-card-styles {
+  /* width: 100%; */
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+  background-color: white;
+  flex-direction: row;
+  margin-left: 10px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+.Img-image {
+  flex: 0.1;
+}
+.Img-card-styles img {
+  width: 100%;
+  height: 100%;
+  fill: contain;
+}
+.Img-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left: 10px;
+}
+.Img-content-host-type {
+  display: flex;
+  flex-direction: column;
+  flex: 0.1;
+  flex-wrap: wrap;
+}
+
+.Img-card-styles button {
+  border-radius: 5px;
+  background-color: var(--primary);
+  border-width: 0ch;
+  -webkit-box-shadow: 1px 1px 2px 3px #ccc;
+  -moz-box-shadow: 1px 1px 2px 3px #ccc;
+  box-shadow: 1px 1px 2px 3px #ccc;
+  padding: 5px;
+  color: var(--white);
+  margin-top: 0.5em;
+}

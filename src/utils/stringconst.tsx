@@ -1,0 +1,1 @@
+export const warningMessage : string = 'Current Selected storage configuration is incompactable'

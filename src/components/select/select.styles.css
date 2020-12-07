@@ -1,0 +1,75 @@
+:root {
+  --primary: #007eff;
+  --white: #ffffff;
+}
+.react-selector {
+}
+
+.react-selector__control {
+  display: flex;
+  position: relative;
+  width: 12em;
+  height: 2.5em;
+  min-width: 4em;
+  padding: 0.5em 1em;
+  /* border: 0.5px solid 20px var(--primary); */
+  border-radius: 8px;
+  background-color: var(--white);
+  border-color: var(--primary);
+}
+
+.react-selector__control__label {
+  padding: 0.2em;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 0.9;
+}
+
+.react-selector__menu__list {
+  position: absolute;
+  list-style: none;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  justify-content: flex-start;
+  /* width: 8em;
+  min-width: 4em; */
+  padding: 0em;
+  margin: 0;
+  margin-left: 0.1em;
+  margin-top: 0.2em;
+  border-radius: 6px;
+  border: 1px solid 20px;
+  overflow: visible;
+  justify-content: center;
+  overflow-wrap: break-word;
+}
+
+.menu-list__item {
+  /* position: absolute; */
+  padding: 0.8em 1em;
+  /* margin: 10px; */
+  font-size: 16px;
+  /* width: 100%; */
+  overflow-wrap: break-word;
+  /* overflow: visible; */
+}
+.menu-list__item label {
+  margin-top: 100px;
+  color: #007eff;
+}
+.menu-list__item hover {
+  background-color: white;
+  color: #007eff;
+  overflow: visible;
+}
+
+.react-selector__dropdown-indicator {
+  position: absolute;
+  right: 8px;
+  top: auto;
+  flex: 0.1;
+}

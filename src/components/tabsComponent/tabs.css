@@ -1,0 +1,118 @@
+.active-tab {
+  width: 180px;
+  height: 43px;
+  background-color: #007eff;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px #007eff;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+.active-button-tab {
+  width: 180px;
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px #007eff;
+  justify-content: center;
+  align-items: center;
+  border-color: #007eff;
+  color: black;
+  font-size: 14px;
+}
+.completed-tab {
+  width: 180px;
+  height: 43px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.in-active-tab {
+  width: 180px;
+  height: 43px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px #007eff;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.with-border {
+  border-width: 1px;
+  border-color: #007eff;
+}
+.Tab-title-div ul {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.Tab-title-div li {
+  list-style-type: none;
+}
+.footer-buttons {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 3px 8px;
+  color: #fff;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+.footer-buttons-left {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 5em;
+  bottom: 0;
+  padding: 3px 8px;
+  color: #fff;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+.proceed-button {
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  color: var(--white);
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}
+.back-button {
+  background-color: var(--black);
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  color: var(--white);
+  font-size: 14px;
+  border: none;
+}

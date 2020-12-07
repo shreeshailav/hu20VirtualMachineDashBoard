@@ -1,0 +1,57 @@
+:root {
+  --primary: #007eff;
+  --white: #ffffff;
+  --black: #000000;
+}
+.root-view-modal h2 {
+  padding: 0px;
+  margin: 0px;
+  /* color: ${titleTextColor}; */
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+}
+.root-view-modal h4 {
+  padding: 0px;
+  margin: 0px;
+  /* color: ${messageColor}; */
+  display: inline-block;
+  font-size: 1em;
+  margin-top: 2em;
+}
+.root-view-modal {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.proceed-buttons {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.yes-button {
+  width: 77.5px;
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  /* color: ${buttonYesTextColor || white }; */
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}
+.no-button {
+  width: 77.5px;
+  background-color: black;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  /* color:  ${buttonYesTextColor || white }; */
+  font-size: 14px;
+  border: none;
+}
