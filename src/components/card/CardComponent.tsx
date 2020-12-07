@@ -17,13 +17,15 @@ const CardCoponent = ({ virtualMachineDetails }: Props) => {
         (item) => item.storageType === "EXT"
       )[0];
       const extPrice = extData ? extData.price : 0
+      const proccessorPrice = virtualMachineDetails.hostType?.priceOnHostType;
       const total =
         (vitualMachines?.basicPrice ? vitualMachines?.basicPrice : 0) +
         (instanceType?.cpuPrice ? instanceType?.cpuPrice : 0) +
         (storageCapacity?.bandwidthPrice
           ? storageCapacity?.bandwidthPrice
           : 0) +
-        (extPrice ? extPrice : 0);
+        (extPrice ? extPrice : 0) + 
+        (proccessorPrice ? proccessorPrice :0)
         return total;
     }
     return 0;
