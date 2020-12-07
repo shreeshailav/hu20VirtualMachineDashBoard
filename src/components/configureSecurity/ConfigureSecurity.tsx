@@ -3,7 +3,7 @@ import { Select } from "./../select/select";
 import { SecurityPolicy } from "./../../store/virtualMachin/types";
 import ConfigureNewSecurity from "./ConfigureNewSecurity";
 import { Modal } from "./../modal/ModalComponent";
-
+import './ConfigureSecurity.css'
 type Props = {
   securityPolicy: SecurityPolicy[];
   addNewPolicy: (securityPolicy: SecurityPolicy) => void;
@@ -62,7 +62,8 @@ const ConfigureSecurity: React.FC<Props> = ({
           <div key={index}>
             <input
               type="radio"
-              value={"reate a new security policy"}
+              data-testid={item.value}
+              value={"create a new security policy"}
               defaultChecked={selectedKey === index}
               name={"securitypolice"}
               onChange={() => setSelectedKey(item.key)}
@@ -86,27 +87,6 @@ const ConfigureSecurity: React.FC<Props> = ({
           </div>
         )}
       </React.Fragment>
-      {/* <style jsx>{`
-        .root-view {
-          font-size: 1em;
-          align-content: center;
-          text-align: left;
-          justify-content: flex-start;
-          margin-left: 0.5em;
-          color: black;
-          font-size: 14px;
-        }
-        .root-view ul {
-          display: flex;
-          flex-direction: column;
-        }
-        .root-view input {
-          margin-top: 1em;
-        }
-        .select-group {
-          margin-left: 0.4em;
-        }
-      `}</style> */}
     </div>
   );
 };

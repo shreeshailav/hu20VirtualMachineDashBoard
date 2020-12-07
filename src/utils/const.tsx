@@ -1,4 +1,4 @@
-import {StorageCapacityOption} from './../store/virtualMachin/types'
+import {StorageCapacityOption,SecurityPolicy} from './../store/virtualMachin/types'
 export const tabData = [
   { key: 1, value: "1. Choose Image" },
   { key: 2, value: "2. Choose Instance Type" },
@@ -47,7 +47,7 @@ export const virtualMachineDetails = {
   storageCapacity: {
     bandwidth: 22,
     bandwidthPrice: 222,
-    storageCapacityId: "string",
+    storageCapacityId: "str123",
     storageCapacityOption: [
       {
         backupRequired: false,
@@ -55,7 +55,7 @@ export const virtualMachineDetails = {
         encryption: true,
         iops: 500,
         price: 0,
-        remark: "string",
+        remark: "remark",
         storageCapacityOptionId: "strcpt1",
         storageType: "ROOT",
         type: { key: "str1", value: "SSD", storageTypePrice: 0 },
@@ -68,7 +68,7 @@ export const virtualMachineDetails = {
 export const storageCapacity = {
   bandwidth: 22,
   bandwidthPrice: 222,
-  storageCapacityId: "string",
+  storageCapacityId: "str123",
   storageCapacityOption: [
     {
       backupRequired: false,
@@ -76,7 +76,7 @@ export const storageCapacity = {
       encryption: true,
       iops: 500,
       price: 0,
-      remark: "string",
+      remark: "remark",
       storageCapacityOptionId: "strcpt1",
       storageType: "ROOT",
       type: { key: "str1", value: "SSD", storageTypePrice: 0 },
@@ -378,25 +378,9 @@ export const initialStateConstant = {
         encryption: true,
         iops: 500,
         backupRequired: false,
-        remark: "string",
-        price: 0,
-      },
-      {
-        storageCapacityOptionId: "strcpt2",
-        storageType: "EXT",
-        type: {
-          key: "str1",
-          value: "SSD",
-          storageTypePrice: 0,
-        },
-        valume: "Ext",
-        capacity: 20,
-        encryption: true,
-        iops: 300,
-        backupRequired: false,
         remark: "remark",
-        price: 40,
-      },
+        price: 0,
+      }
     ],
     bandwidth: 22,
     bandwidthPrice: 222,
@@ -456,6 +440,43 @@ export const extStorageCapacityOption: StorageCapacityOption = {
   encryption: true,
   iops: 500,
   backupRequired: false,
-  remark: "string",
+  remark: "remark",
   price: 512,
 };
+
+
+export const securityPolicy:SecurityPolicy[] = [
+  {
+    securityPolicyId: "sec1",
+    securityPolicyName: "Security SG1",
+    securityPolicyType: "HTTPS",
+    securityPolicyProtocol: "TCP",
+    securityPolicyPort: 3030,
+    securityPolicySource: "192.168.0.0",
+    securityPolicyDescription: "https security policy",
+    key: "sec1",
+    value: "Security SG1",
+  },
+  {
+    securityPolicyId: "sec2",
+    securityPolicyName: "Security SG2",
+    securityPolicyType: "HTTPS",
+    securityPolicyProtocol: "TCP",
+    securityPolicyPort: 3030,
+    securityPolicySource: "192.168.0.0",
+    securityPolicyDescription: "https security policy",
+    key: "sec2",
+    value: "Security SG2",
+  },
+  {
+    securityPolicyId: "sec3",
+    securityPolicyName: "Security SG3",
+    securityPolicyType: "HTTPS",
+    securityPolicyProtocol: "TCP",
+    securityPolicyPort: 3030,
+    securityPolicySource: "192.168.0.0",
+    securityPolicyDescription: "https security policy",
+    key: "sec3",
+    value: "Security SG2",
+  },
+]

@@ -2,18 +2,20 @@ import React from "react";
 import { Select } from "./../select/select";
 import { primary, grey } from "./../../utils/colors";
 import CustomButton from "./../button/Button";
-import {SecurityPolicy} from './../../store/virtualMachin/types'
-import './ConfigureNewSecurity.css'
+import { SecurityPolicy } from "./../../store/virtualMachin/types";
+import "./ConfigureSecurity.css";
+
 const securityType = [
   { key: "st1", value: "HTTPS" },
   { key: "st2", value: "SSH" },
   { key: "st3", value: "SMTP" },
 ];
+
 type Props = {
-  addNewPolicy: (newSecurityPolicy:SecurityPolicy)=>void
+  addNewPolicy: (newSecurityPolicy: SecurityPolicy) => void;
 };
 
-const ConfigureNewSecurity: React.FC<Props> = ({addNewPolicy}) => {
+const ConfigureNewSecurity: React.FC<Props> = ({ addNewPolicy }) => {
   const [enableAdd, setEnableAdd] = React.useState(false);
   const [remark, setRmark] = React.useState("");
   const [groupName, setGroupName] = React.useState("");
@@ -28,29 +30,30 @@ const ConfigureNewSecurity: React.FC<Props> = ({addNewPolicy}) => {
     if (name.length > 0 && selectionKey.length > 0) setEnableAdd(true);
     else setEnableAdd(false);
   };
-  const onAddRule = () =>{
-
-    console.log('kjbjkcbejkcbkjwbejkbjkerb')
-    const policyId = Math.floor(Math.random() * 120) + 20
+  const onAddRule = () => {
+    const policyId = Math.floor(Math.random() * 120) + 20;
     const newSecurityPolicy = {
-      securityPolicyId: 'policy'+policyId,
+      securityPolicyId: "policy" + policyId,
       securityPolicyName: groupName,
-      securityPolicyType: securityType.filter((item)=>item.key === selectionKey )[0].value,
-      securityPolicyProtocol: 'TCP',
+      securityPolicyType: securityType.filter(
+        (item) => item.key === selectionKey
+      )[0].value,
+      securityPolicyProtocol: "TCP",
       securityPolicyPort: 334,
-      securityPolicySource: '192.168.0.1',
+      securityPolicySource: "192.168.0.1",
       securityPolicyDescription: remark,
-      key: 'policy'+policyId,
+      key: "policy" + policyId,
       value: groupName,
-    }
-    addNewPolicy(newSecurityPolicy)
-  }
+    };
+    addNewPolicy(newSecurityPolicy);
+  };
   return (
     <div>
       <React.Fragment>
         <div className="input-text-style">
           <h1>New Security Group</h1>
           <input
+            data-testid={"New Security Group Name"}
             className="group-name-input"
             value={groupName}
             placeholder={"New Security Group Name"}

@@ -26,6 +26,7 @@ const CustomButton: React.FC<Props> = ({
     <div>
       <React.Fragment>
         <button
+          data-testid={buttonText}
           disabled={disable ? disable : false}
           className="button-style"
           onClick={onClickOnButton}
@@ -40,7 +41,7 @@ const CustomButton: React.FC<Props> = ({
             color: buttonTextColor,
             borderRadius: "8px",
             border: "none",
-            boxShadow: "0px 8px 16px rgba(160, 164, 168, 0.35)"
+            boxShadow: "0px 8px 16px rgba(160, 164, 168, 0.35)",
           }}
         >
           {buttonText}
